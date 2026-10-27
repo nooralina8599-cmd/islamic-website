@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<style>
+body {
+    background-color: #e8f5e9;
+    font-family: Arial;
+    text-align: center;
+}
+h1 {
+    color: darkgreen;
+}
+h2 {
+    color: darkred;
+}
+p {
+    color: black;
+    font-size: 18px;
+}
+nav a {
+    display: inline-block;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: darkred;
+}
+img {
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    border: 4px solid darkgreen;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 12px gray;
+}
+</style>
+    <meta charset="UTF-8">
+  <style>
+body {
+    background-color: #f0fff0;
+    text-align: center;
+    font-family: Arial;
+}
+h1 {
+    color: green;
+}
+img {
+    border-radius: 15px;
+    margin: 15px;
+}
+</style>  <title>Islamic World</title>
+
+</head>
+
+<body style="background-color: #e8f5e9; text-align: center;">
+
+    <h1 style="color: green;">
+        Islamic World
+    </h1>
+
+    <h2>Assalamu Alaikum</h2>
+
+    <p>Welcome to Our Islamic Website</p>
+<div id="makka">
+<img src="makka.jpg.jpg" alt="Makkah Sharif" width="350">
+<h2>Makkah Sharif 🕋</h2>
+<p>Makkah Sharif is a holy place for Muslims.</p>
+<br>
+<br>
+<div
+<img src="makka.jpg.jpg" alt="Makkah Sharif" width="350"> id="madina">
+</div>
+</div>
+<h2>Madina Sharif 🕌</h2>
+<p>Madina Sharif is a blessed city of Islam.</p>
+
+    <h3>हमारी वेबसाइट पर आपका स्वागत है।</h3> 
+    <p>मक्का शरीफ | मदीना शरीफ | इस्लामिक जानकारी</p>
+<h1>ISLAMIC WORLD 
+<nav>
+  <a href="#makka">Makkah Sharif</a> |
+  <a href="#madina">Madina Sharif</a> |
+  <a href="#info">Islamic Information</a> |
+  <a href="#duas">Duas</a>
+</nav>
+<br>
+<input type="text" id="searchBox" placeholder="Search Islamic Information...">
+<button onclick="searchInfo()">Search</button>
+<p id="searchResult"></p>
+<hr>🕌</h1>
+<p>Welcome to our Islamic Website</p>
+<hr>
+<div id="info">
+<h2>Islamic Information 📖</h2>
+<h3>Islam ke 5 Arkan</h3>
+<p>1. Kalima (Shahada)</p>
+<p>2. Namaz - Din mein paanch waqt</p>
+<p>3. Roza - Ramzan mein</p>
+<p>4. Zakat - Mustahiq logon ki madad</p>
+<p>5. Hajj - Istitaat hone par</p>
+</div>
+<hr>
+
+<div id="duas">
+    <h2>Daily Islamic Duas 🤲</h2>
+
+    <h3>1. Khana Khane Se Pehle</h3>
+    <p>بِسْمِ اللَّهِ</p>
+    <p>Bismillah</p>
+    <p>Meaning: Allah ke naam se shuru karta hoon.</p>
+
+    <h3>2. Khana Khane Ke Baad</h3>
+    <p>الْحَمْدُ لِلَّهِ</p>
+    <p>Alhamdulillah</p>
+    <p>Meaning: Sab tareef Allah ke liye hai.</p>
+
+    <h3>3. Ilm Mein Izafe Ki Dua</h3>
+    <p>رَبِّ زِدْنِي عِلْمًا</p>
+    <p>Rabbi zidni ilma</p>
+    <p>Meaning: Aye mere Rab! Mere ilm mein izafa farma.</p>
+
+    <h3>4. Duniya Aur Aakhirat Ki Bhalai Ki Dua</h3>
+    <p>رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+    <p>Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina azaban-nar.</p>
+    <p>Meaning: Aye hamare Rab! Hamein duniya aur aakhirat mein bhalai ata farma aur aag ke azaab se bacha.</p>
+</div>
+<footer>
+    <hr>
+    <h3>جزاك الله خيرا</h3>
+    <p>JazakAllahu Khairan</p>
+    <p>May Allah bless everyone who visits this website.</p>
+    <p>© 2026 Islamic World</p>
+</footer>
+<script>
+function searchInfo() {
+    let word = document.getElementById("searchBox").value.toLowerCase();
+    let result = document.getElementById("searchResult");
+
+    if (word === "") {
+        result.innerHTML = "Please type something to search.";
+    } 
+    else if (word.includes("namaz") || word.includes("salah")) {
+        result.innerHTML = "Namaz is an important pillar of Islam. Muslims pray five times a day.";
+    } 
+    else if (word.includes("roza") || word.includes("ramadan")) {
+        result.innerHTML = "Muslims fast during the month of Ramadan.";
+    } 
+    else if (word.includes("dua") || word.includes("duas")) {
+        result.innerHTML = "Dua is a way to ask Allah for help and blessings.";
+    } 
+    else if (word.includes("makkah") || word.includes("makka")) {
+        result.innerHTML = "Makkah Sharif is home to the Holy Kaaba.";
+    } 
+    else if (word.includes("madina") || word.includes("madinah")) {
+        result.innerHTML = "Madina Sharif is the city of Masjid an-Nabawi.";
+    } 
+    else {
+        result.innerHTML = "Sorry, this information is not available yet.";
+    }
+}
+</script>
+</body>
+</html>
